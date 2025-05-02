@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0; /* Removed padding from body to ensure no space around the header */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 0 1em;
+  background-color: #ffffff;
+  color: #222;
 }
 
 .header {
@@ -52,9 +53,48 @@ li {
 
 a {
     color: #0077cc; /* Link color */
+    [target="_blank"]::after {
+    content: " ↗";
+    font-size: 0.9em;
     text-decoration: none; /* Removes underline */
 }
 
 a:hover {
     text-decoration: underline; /* Adds underline on hover */
+}
+
+.top-nav {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-nav li {
+  margin: 0;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 0.25em 0.5em;
+  transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: #0077cc;
+  text-decoration: underline;
 }
