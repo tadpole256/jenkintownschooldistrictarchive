@@ -63,6 +63,10 @@ a:hover {
   z-index: 1000;
 }
 
+.top-nav {
+  border: 2px dashed red; /* TEMPORARY for debugging */
+}
+
 .top-nav ul {
   display: flex;
   justify-content: center;
