@@ -64,7 +64,7 @@ a:hover {
 }
 
 .top-nav ul {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   gap: 2em;
   list-style: none;
